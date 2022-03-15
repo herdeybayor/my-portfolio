@@ -8,6 +8,7 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
       heading: ['Lilita One', 'cursive'],
+      monoton: ['Monoton', 'calibri'],
     },
   },
   plugins: [],
