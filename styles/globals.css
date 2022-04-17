@@ -51,3 +51,10 @@
     background-color: #facc15;
     transform: rotate(160deg);
 }
+
+/* AboutPage */
+/* AboutMe */
+.download__shadow {
+    box-shadow: 4px 4px 8px #573f08,
+    -4px -4px 8px #ffffff25;
+}

@@ -16,7 +16,7 @@ import HomePageAnimation from '../components/HomePageAnimation'
 
 const Home: NextPage = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-[#fbf8f1] font-sans">
+    <div className="relative h-screen w-full overflow-hidden bg-creamy font-sans">
       <Head>
         <title>Sherifdeen Adebayo</title>
         <link rel="icon" href="/favicon.ico" />
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               </div>
               <div className="absolute top-0 w-full">
                 Hi, I'm{' '}
-                <span className="font-bold text-purple-500">
+                <span className="text-purple-500 font-bold">
                   Sherifdeen Adebayo.
                 </span>{' '}
                 <span className="inline-flex">
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
 
           <div className="flex justify-center space-x-5 lg:justify-start">
             <a href="mailto:herdeybayor4real@gmail.com">
-              <div className="group inline-flex cursor-pointer items-end justify-center space-x-3 rounded-lg bg-purple-500 px-4 py-2 text-white transition duration-300 hover:bg-purple-600">
+              <div className="bg-purple-500 text-white hover:bg-purple-600 group inline-flex cursor-pointer items-end justify-center space-x-3 rounded-lg px-4 py-2 transition duration-300">
                 <span>Let's Talk</span>
                 <HiOutlinePaperAirplane className="rotate-45 text-3xl transition duration-300 group-hover:-translate-y-1" />
               </div>

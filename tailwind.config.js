@@ -4,7 +4,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        creamy: '#fbf8f1',
+      },
+    },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
       heading: ['Lilita One', 'cursive'],
