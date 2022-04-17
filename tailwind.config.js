@@ -9,6 +9,7 @@ module.exports = {
       sans: ['Roboto', 'sans-serif'],
       heading: ['Lilita One', 'cursive'],
       monoton: ['Monoton', 'calibri'],
+      barlowCondensed: ['Barlow Condensed', 'sans-serif'],
     },
   },
   plugins: [],

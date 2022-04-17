@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRef, useState } from 'react'
 
-const Header = () => {
+const Header = ({ buggerLight }: { buggerLight?: boolean }) => {
   const bigTextRef = useRef(null)
   const navigationRef = useRef(null)
   const [currentHoverText, setCurrentHoverText] = useState('')
@@ -32,14 +32,20 @@ const Header = () => {
           }}
           className="bugger group flex cursor-pointer flex-col items-end space-y-2 transition"
         >
-          <div className="h-1 w-12 bg-black"></div>
           <div
-            style={{ transition: '300ms linear' }}
-            className="h-1 w-9 bg-black group-hover:w-full"
+            className={`h-1 w-12 ${buggerLight ? 'bg-white' : 'bg-black'}`}
           ></div>
           <div
             style={{ transition: '300ms linear' }}
-            className="h-1 w-6 bg-black group-hover:w-full"
+            className={`h-1 w-9 ${
+              buggerLight ? 'bg-white' : 'bg-black'
+            } group-hover:w-full`}
+          ></div>
+          <div
+            style={{ transition: '300ms linear' }}
+            className={`h-1 w-6 ${
+              buggerLight ? 'bg-white' : 'bg-black'
+            } group-hover:w-full`}
           ></div>
         </div>
       </div>
@@ -47,7 +53,7 @@ const Header = () => {
       {/* Big Navigation bar */}
       <div
         ref={navigationRef}
-        className="fixed top-0 left-0 z-10 flex h-screen w-full -translate-y-full items-center justify-center bg-yellow-500"
+        className="fixed top-0 left-0 z-10 flex h-screen w-full -translate-y-full items-center justify-center bg-yellow-400"
       >
         <div className="absolute top-0 mx-auto flex w-full max-w-6xl items-center justify-between py-5 px-10">
           <Image
@@ -81,7 +87,7 @@ const Header = () => {
               onMouseOut={() => {
                 setCurrentHoverText('')
               }}
-              className="cursor-pointer bg-yellow-500"
+              className="cursor-pointer bg-yellow-400"
             >
               HOME
             </p>
@@ -99,7 +105,7 @@ const Header = () => {
               onMouseOut={() => {
                 setCurrentHoverText('')
               }}
-              className="cursor-pointer bg-yellow-500"
+              className="cursor-pointer bg-yellow-400"
             >
               ABOUT
             </p>
@@ -117,7 +123,7 @@ const Header = () => {
               onMouseOut={() => {
                 setCurrentHoverText('')
               }}
-              className="cursor-pointer bg-yellow-500"
+              className="cursor-pointer bg-yellow-400"
             >
               PORTFOLIO
             </p>
@@ -135,7 +141,7 @@ const Header = () => {
               onMouseOut={() => {
                 setCurrentHoverText('')
               }}
-              className="cursor-pointer bg-yellow-500"
+              className="cursor-pointer bg-yellow-400"
             >
               CONTACT
             </p>

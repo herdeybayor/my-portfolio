@@ -12,10 +12,11 @@ import { CgArrowTopRight } from 'react-icons/cg'
 import Image from 'next/image'
 import Link from 'next/link'
 import Typewriter from 'typewriter-effect'
+import HomePageAnimation from '../components/HomePageAnimation'
 
 const Home: NextPage = () => {
   return (
-    <div className="h-screen w-full overflow-hidden bg-[#fbf8f1] font-sans">
+    <div className="relative h-screen w-full overflow-hidden bg-[#fbf8f1] font-sans">
       <Head>
         <title>Sherifdeen Adebayo</title>
         <link rel="icon" href="/favicon.ico" />
@@ -33,24 +34,31 @@ const Home: NextPage = () => {
             <h1 className="header-text font-heading text-5xl md:text-6xl lg:text-5xl">
               creative designer <br /> & developer
             </h1>
-            <div className="text-2xl leading-relaxed">
-              Hi, I'm{' '}
-              <span className="font-bold text-purple-500">
-                Sherifdeen Adebayo.
-              </span>{' '}
-              <span className="inline-flex">
-                <Typewriter
-                  options={{
-                    strings: [
-                      ' A passionate FullStack Dev.',
-                      " I'm 17yrs Old.",
-                      ' A professional UI/UX designer.',
-                    ],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </span>
+            <div className="relative h-max text-2xl leading-relaxed">
+              {/* Dummy text to stop movement */}
+              <div className="invisible">
+                Lorem ipsum dolor sit from, construction admiring lets. Aquatic
+                at From vertebrate.
+              </div>
+              <div className="absolute top-0 w-full">
+                Hi, I'm{' '}
+                <span className="font-bold text-purple-500">
+                  Sherifdeen Adebayo.
+                </span>{' '}
+                <span className="inline-flex">
+                  <Typewriter
+                    options={{
+                      strings: [
+                        ' A passionate FullStack Dev.',
+                        " I'm 17yrs Old.",
+                        ' A professional UI/UX designer.',
+                      ],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </span>
+              </div>
             </div>
           </div>
 
@@ -73,22 +81,22 @@ const Home: NextPage = () => {
             <p className="font-bold">Check Out My</p>
 
             <a href="https://github.com/herdeybayor" target="_blank">
-              <FaGithub className="animate-bounce cursor-pointer text-3xl transition duration-300 hover:animate-none" />
+              <FaGithub className="social__icons" />
             </a>
 
             <a href="https://www.linkedin.com/in/herdeybayor" target="_blank">
-              <FaLinkedin className="animate-bounce cursor-pointer text-3xl transition duration-300 hover:animate-none" />
+              <FaLinkedin className="social__icons" />
             </a>
 
             <a
               href="https://www.instagram.com/dprince_graphics"
               target="_blank"
             >
-              <FaInstagramSquare className="animate-bounce cursor-pointer text-3xl transition duration-300 hover:animate-none" />
+              <FaInstagramSquare className="social__icons" />
             </a>
 
             <a href="https://twitter.com/S_herdeybayor" target="_blank">
-              <FaTwitterSquare className="animate-bounce cursor-pointer text-3xl transition duration-300 hover:animate-none" />
+              <FaTwitterSquare className="social__icons" />
             </a>
           </div>
         </div>
