@@ -14,6 +14,7 @@ const MySkills = () => {
           <Skill percent={88} skill="JavaScript" />
           <Skill percent={92} skill="Node.js" />
           <Skill percent={90} skill="React.js/Next.js" />
+          <Skill percent={70} skill="React Native" />
           <Skill percent={92} skill="MongoDB" />
           <Skill percent={80} skill="Git/GitHub" />
           <Skill percent={95} skill="Tailwind CSS" />
