@@ -55,6 +55,12 @@
 /* AboutPage */
 /* AboutMe */
 .download__shadow {
-    box-shadow: 4px 4px 8px #573f08,
+    box-shadow: 4px 4px 8px #3b2a0375,
     -4px -4px 8px #ffffff25;
+}
+
+/* Service */
+.service__card {
+    box-shadow: 5px 5px 10px #3d2c0575,
+    -5px -5px 10px #ffffff75;
 }

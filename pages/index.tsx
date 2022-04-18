@@ -16,7 +16,7 @@ import HomePageAnimation from '../components/HomePageAnimation'
 
 const Home: NextPage = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-creamy font-sans">
+    <div className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-creamy px-10 font-sans lg:px-32">
       <Head>
         <title>Sherifdeen Adebayo</title>
         <link rel="icon" href="/favicon.ico" />
@@ -27,9 +27,9 @@ const Home: NextPage = () => {
 
       {/* Content */}
 
-      <div className="mx-auto flex h-[80vh] max-w-6xl items-center justify-center space-x-20 px-10 text-center lg:justify-between lg:text-left">
+      <div className="flex h-max w-full items-center justify-center space-x-20 text-center lg:grid lg:grid-cols-2">
         {/* Left Side */}
-        <div className="space-y-10 lg:basis-1/2">
+        <div className="space-y-10 text-center lg:text-left">
           <div className="space-y-5">
             <h1 className="header-text font-heading text-5xl md:text-6xl lg:text-5xl">
               creative designer <br /> & developer
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               </div>
               <div className="absolute top-0 w-full">
                 Hi, I'm{' '}
-                <span className="text-purple-500 font-bold">
+                <span className="font-bold text-purple-500">
                   Sherifdeen Adebayo.
                 </span>{' '}
                 <span className="inline-flex">
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
 
           <div className="flex justify-center space-x-5 lg:justify-start">
             <a href="mailto:herdeybayor4real@gmail.com">
-              <div className="bg-purple-500 text-white hover:bg-purple-600 group inline-flex cursor-pointer items-end justify-center space-x-3 rounded-lg px-4 py-2 transition duration-300">
+              <div className="group inline-flex cursor-pointer items-end justify-center space-x-3 rounded-lg bg-purple-500 px-4 py-2 text-white transition duration-300 hover:bg-purple-600">
                 <span>Let's Talk</span>
                 <HiOutlinePaperAirplane className="rotate-45 text-3xl transition duration-300 group-hover:-translate-y-1" />
               </div>
@@ -102,15 +102,12 @@ const Home: NextPage = () => {
         </div>
 
         {/* Right Side */}
-        <div className="hidden basis-1/2 items-center justify-center lg:flex">
-          <div className="w-full">
-            <Image
-              src="/assets/images/avatar.png"
-              width={16}
-              height={16}
-              layout="responsive"
-            />
-          </div>
+        <div className="relative hidden h-full w-full basis-1/2 items-center justify-center lg:flex">
+          <Image
+            src="/assets/images/banner.png"
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
       </div>
     </div>

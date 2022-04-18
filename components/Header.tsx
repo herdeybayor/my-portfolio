@@ -19,7 +19,7 @@ const Header = ({ buggerLight }: { buggerLight?: boolean }) => {
   return (
     <div>
       {/* Navbar */}
-      <div className="mx-auto flex max-w-6xl items-center justify-between py-5 px-10">
+      <div className="fixed top-0 left-0 flex w-full items-center justify-between py-5 px-10">
         <Image
           src="/assets/images/my-logo.png"
           width={60}

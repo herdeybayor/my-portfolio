@@ -4,7 +4,7 @@ import { FaDownload } from 'react-icons/fa'
 
 const AboutMe = () => {
   return (
-    <div className="mx-auto flex max-w-6xl flex-col items-center px-10 pb-10">
+    <div className="flex min-h-screen flex-col items-center bg-creamy px-10 pt-32 pb-10 lg:px-20">
       <div className="flex flex-col space-y-2 text-center">
         <h1 className="text-4xl font-semibold">
           About <span className="text-purple-500">Me</span>
