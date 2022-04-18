@@ -19,7 +19,7 @@ const Header = ({ buggerLight }: { buggerLight?: boolean }) => {
   return (
     <div>
       {/* Navbar */}
-      <div className="fixed top-0 left-0 flex w-full items-center justify-between py-5 px-10">
+      <div className="fixed top-0 left-0 z-20 flex w-full items-center justify-between py-5 px-10">
         <Image
           src="/assets/images/my-logo.png"
           width={60}
@@ -53,7 +53,7 @@ const Header = ({ buggerLight }: { buggerLight?: boolean }) => {
       {/* Big Navigation bar */}
       <div
         ref={navigationRef}
-        className="fixed top-0 left-0 z-10 flex h-screen w-full -translate-y-full items-center justify-center bg-yellow-400"
+        className="fixed top-0 left-0 z-50 flex h-screen w-full -translate-y-full items-center justify-center bg-yellow-400"
       >
         <div className="absolute top-0 mx-auto flex w-full max-w-6xl items-center justify-between py-5 px-10">
           <Image

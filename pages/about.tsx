@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import AboutMe from '../components/AboutPage'
 import MyServices from '../components/AboutPage/MyServices'
+import MySkills from '../components/AboutPage/MySkills'
 
 const about = () => {
   return (
@@ -16,6 +17,7 @@ const about = () => {
 
       <AboutMe />
       <MyServices />
+      <MySkills />
     </div>
   )
 }

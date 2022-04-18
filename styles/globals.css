@@ -64,3 +64,23 @@
     box-shadow: 5px 5px 10px #3d2c0575,
     -5px -5px 10px #ffffff75;
 }
+
+/* Skill */
+.skill__outer {
+    box-shadow: 4px 4px 8px -1px #3b2a0375,
+    -4px -4px 8px -1px #ffffff75;
+}
+.skill__inner {
+    box-shadow: inset 2px 2px 6px -1px #3b2a0375,
+    inset -2px -2px 6px -1px #ffffff75,
+    -0.5px -0.5px 0px #ffffff,
+    0.5px 0.5px 0px #00000015,
+    0px 12px 10px -10px #00000005;
+}
+
+.arc circle {
+    fill: none;
+    stroke: rgb(168 85 247);
+    stroke-width: 10px;
+    stroke-dasharray: 370;
+}
