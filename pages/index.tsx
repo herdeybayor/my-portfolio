@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 
       <div className="flex h-max w-full items-center justify-center space-x-20 text-center lg:grid lg:grid-cols-2">
         {/* Left Side */}
-        <div className="space-y-10 text-center lg:text-left">
+        <div className="space-y-5 text-center lg:text-left">
           <div className="space-y-5">
             <h1 className="font-heading text-5xl md:text-6xl lg:text-5xl">
               creative designer <br /> & developer
@@ -77,27 +77,29 @@ const Home: NextPage = () => {
             </Link>
           </div>
 
-          <div className="flex items-center justify-center space-x-10 lg:justify-start">
+          <div className="flex flex-col items-center justify-center space-y-5 lg:flex-row lg:justify-start lg:space-y-0 lg:space-x-10">
             <p className="font-bold">Check Out My</p>
 
-            <a href="https://github.com/herdeybayor" target="_blank">
-              <FaGithub className="social__icons" />
-            </a>
+            <div className="flex space-x-10">
+              <a href="https://github.com/herdeybayor" target="_blank">
+                <FaGithub className="social__icons" />
+              </a>
 
-            <a href="https://www.linkedin.com/in/herdeybayor" target="_blank">
-              <FaLinkedin className="social__icons" />
-            </a>
+              <a href="https://www.linkedin.com/in/herdeybayor" target="_blank">
+                <FaLinkedin className="social__icons" />
+              </a>
 
-            <a
-              href="https://www.instagram.com/dprince_graphics"
-              target="_blank"
-            >
-              <FaInstagramSquare className="social__icons" />
-            </a>
+              <a
+                href="https://www.instagram.com/dprince_graphics"
+                target="_blank"
+              >
+                <FaInstagramSquare className="social__icons" />
+              </a>
 
-            <a href="https://twitter.com/S_herdeybayor" target="_blank">
-              <FaTwitterSquare className="social__icons" />
-            </a>
+              <a href="https://twitter.com/S_herdeybayor" target="_blank">
+                <FaTwitterSquare className="social__icons" />
+              </a>
+            </div>
           </div>
         </div>
 
