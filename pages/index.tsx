@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         {/* Left Side */}
         <div className="space-y-10 text-center lg:text-left">
           <div className="space-y-5">
-            <h1 className="header-text font-heading text-5xl md:text-6xl lg:text-5xl">
+            <h1 className="font-heading text-5xl md:text-6xl lg:text-5xl">
               creative designer <br /> & developer
             </h1>
             <div className="relative h-max text-2xl leading-relaxed">
