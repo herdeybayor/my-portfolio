@@ -76,6 +76,9 @@ const Header = ({ buggerLight }: { buggerLight?: boolean }) => {
         <div className="flex flex-col items-center justify-center space-y-6 px-10 text-5xl font-medium text-white">
           <Link href="/">
             <p
+              onClick={() => {
+                handleMenuClick()
+              }}
               onMouseOver={() => {
                 setCurrentHoverText('HOME')
                 gsap.fromTo(
@@ -94,6 +97,9 @@ const Header = ({ buggerLight }: { buggerLight?: boolean }) => {
           </Link>
           <Link href="/about">
             <p
+              onClick={() => {
+                handleMenuClick()
+              }}
               onMouseOver={() => {
                 setCurrentHoverText('ABOUT')
                 gsap.fromTo(
@@ -112,6 +118,9 @@ const Header = ({ buggerLight }: { buggerLight?: boolean }) => {
           </Link>
           <Link href="/portfolio">
             <p
+              onClick={() => {
+                handleMenuClick()
+              }}
               onMouseOver={() => {
                 setCurrentHoverText('PORTFOLIO')
                 gsap.fromTo(
@@ -130,6 +139,9 @@ const Header = ({ buggerLight }: { buggerLight?: boolean }) => {
           </Link>
           <Link href="/contact">
             <p
+              onClick={() => {
+                handleMenuClick()
+              }}
               onMouseOver={() => {
                 setCurrentHoverText('CONTACT')
                 gsap.fromTo(
