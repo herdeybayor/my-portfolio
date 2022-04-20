@@ -48,9 +48,10 @@ const portfolio = ({ siteViews, projects }: Props) => {
 
         {/* Projects */}
         <div className="mt-10 w-full">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <Project
               key={project._id}
+              index={index + 1}
               title={project.title}
               subtitle={project.subtitle}
               frameworks={project.frameworks}
@@ -72,7 +73,7 @@ const portfolio = ({ siteViews, projects }: Props) => {
         </div>
 
         <Link href="/contact">
-          <button className="service__card rounded-full bg-yellow-400 py-4 px-8 font-semibold">
+          <button className="service__card rounded-full bg-yellow-400 py-4 px-8 font-semibold transition-all duration-300 hover:scale-110">
             SAY HELLO
           </button>
         </Link>

@@ -4,6 +4,7 @@ import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
 interface Project {
+  index: number
   title: string
   subtitle: string
   frameworks: string
@@ -11,12 +12,12 @@ interface Project {
   url: string
 }
 
-const Work = ({ title, subtitle, frameworks, image, url }: Project) => {
+const Work = ({ title, subtitle, frameworks, image, url, index }: Project) => {
   return (
     <div className="group relative flex w-full flex-col items-center justify-between space-y-5 overflow-hidden border-t-2 px-10 py-10 md:flex-row lg:h-72 lg:flex-row lg:space-y-0 lg:px-20 lg:py-0">
       <div className="flex items-center text-black lg:space-x-5 lg:text-gray-400">
         <div className="hidden h-[2px] w-32 bg-gray-400 lg:inline-flex"></div>
-        <div className="hidden text-3xl font-light lg:inline-flex">01</div>
+        <div className="hidden text-3xl font-light lg:inline-flex">{index}</div>
         <div className="flex flex-col items-center justify-center space-y-1 md:items-start lg:items-start lg:space-y-0">
           <h1 className="text-2xl font-bold lg:group-hover:text-black">
             {title}

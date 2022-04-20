@@ -84,3 +84,24 @@
     stroke-width: 10px;
     stroke-dasharray: 370;
 }
+
+/* Contact */
+
+.contact__container {
+    box-shadow: inset 15px 15px 20px #EBDBB6,
+    inset -15px -15px 20px #ffffff70,
+    5px 5px 8px -2px #EBDBB6;
+}
+
+.contact__input {
+    @apply px-5 py-3 text-center font-medium text-gray-500 focus:text-purple-500 focus:outline-purple-500;
+    box-shadow: inset 8px 8px 16px #EBDBB6,
+    inset -8px -8px 16px #ffffff70,
+    2px 2px 4px #EBDBB6;
+}
+
+.contact__submit {
+    box-shadow: inset -10px -10px 16px rgb(62, 11, 111),
+    inset 10px 10px 16px #ffffff80,
+    2px 2px 4px -1px rgb(62, 11, 111);
+}

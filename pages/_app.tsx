@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     const fetchPageViews = async () => {
       const res = await fetch(
-        'https://api.countapi.xyz/hit/sherifdeenadebayo.com'
+        'https://api.countapi.xyz/hit/herifdeenadebayo.com'
       )
       const json = await res.json()
       setSiteViews(json.value)
