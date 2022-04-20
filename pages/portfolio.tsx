@@ -1,5 +1,6 @@
 import { url } from 'inspector'
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -59,6 +60,24 @@ const portfolio = ({ siteViews, projects }: Props) => {
           ))}
         </div>
       </div>
+      {/* Banner */}
+      <div className="flex w-full flex-col items-center space-y-5 bg-yellow-400 px-10 py-10 text-white lg:px-20">
+        <div className="space-y-2 text-center">
+          <h1 className="text-2xl font-bold lg:text-5xl">
+            Let's work <span className="text-purple-500">Together</span>
+          </h1>
+          <p className="text-lg lg:text-2xl">
+            I’m available for freelance work.
+          </p>
+        </div>
+
+        <Link href="/contact">
+          <button className="service__card rounded-full bg-yellow-400 py-4 px-8 font-semibold">
+            SAY HELLO
+          </button>
+        </Link>
+      </div>
+      {/* Footer */}
       <Footer siteViews={siteViews} />
     </div>
   )
