@@ -94,7 +94,7 @@
 }
 
 .contact__input {
-    @apply px-5 py-3 text-center font-medium text-gray-500 focus:text-purple-500 focus:outline-purple-500;
+    @apply px-5 py-3 text-center font-medium text-gray-500 focus:text-purple-500 focus:outline-purple-500 text-xs sm:text-base flex-1;
     box-shadow: inset 8px 8px 16px #EBDBB6,
     inset -8px -8px 16px #ffffff70,
     2px 2px 4px #EBDBB6;
