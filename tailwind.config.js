@@ -16,5 +16,5 @@ module.exports = {
       barlowCondensed: ['Barlow Condensed', 'sans-serif'],
     },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [require('tailwind-scrollbar'), require('@tailwindcss/forms')],
 }
