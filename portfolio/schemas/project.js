@@ -16,7 +16,6 @@ export default {
     {
       name: 'frameworks',
       title: 'Frameworks',
-      description: "Separate each framework with '|'.",
       type: 'string',
     },
     {
