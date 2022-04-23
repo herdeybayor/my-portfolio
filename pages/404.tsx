@@ -7,7 +7,7 @@ const Custom404 = () => {
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-yellow-400 px-10 text-center font-sans">
       <Head>
-        <title>Sherifdeen Adebayo | 404</title>
+        <title>404 &mdash; Sherifdeen Adebayo || @herdeybayor</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

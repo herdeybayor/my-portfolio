@@ -13,7 +13,7 @@ const contact = ({ siteViews }: Props) => {
   return (
     <div className="relative h-screen w-full overflow-y-scroll bg-creamy font-sans scrollbar-thin scrollbar-track-purple-200 scrollbar-thumb-purple-900">
       <Head>
-        <title>Sherifdeen Adebayo | Contact Me</title>
+        <title>Contact Me &mdash; Sherifdeen Adebayo || @herdeybayor</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -17,11 +17,6 @@ import HomePageAnimation from '../components/HomePageAnimation'
 const Home: NextPage = () => {
   return (
     <div className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-creamy px-10 font-sans lg:px-32">
-      <Head>
-        <title>Sherifdeen Adebayo</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       {/* Header */}
       <Header />
 
