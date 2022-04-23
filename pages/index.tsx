@@ -64,7 +64,7 @@ const Home: NextPage = () => {
 
           <div className="flex justify-center space-x-5 lg:justify-start">
             <a href="mailto:herdeybayor4real@gmail.com">
-              <div className="group inline-flex cursor-pointer items-end justify-center space-x-3 rounded-lg bg-purple-500 px-4 py-2 text-white transition duration-300 hover:bg-purple-600">
+              <div className="group inline-flex cursor-pointer items-center justify-center space-x-3 rounded-lg bg-purple-500 px-4 py-2 text-white transition duration-300 hover:bg-purple-600">
                 <span>Let's Talk</span>
                 <HiOutlinePaperAirplane className="rotate-45 text-3xl transition duration-300 group-hover:-translate-y-1" />
               </div>

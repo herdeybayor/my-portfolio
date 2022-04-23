@@ -30,7 +30,10 @@ const AboutMe = () => {
             editing, image cropping and other graphic design services.
           </p>
           <button className="download__shadow group mx-auto flex items-center space-x-3 rounded-lg bg-creamy py-3 px-5 text-xl font-semibold text-purple-500">
-            <a href="https://google.com" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1iM9yx6GbHLejQcisZb1UxXjdeLnXQnqd/view?usp=sharing"
+              target="_blank"
+            >
               Download CV
             </a>{' '}
             <FaDownload className="transition-transform duration-300 group-hover:translate-y-1" />
