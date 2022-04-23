@@ -105,3 +105,45 @@
     inset 10px 10px 16px #ffffff80,
     2px 2px 4px -1px rgb(62, 11, 111);
 }
+
+/* Page animation */
+.page-switch-animation {
+	width: 100%;
+	height: 300vh;
+	background-color: #facc15;
+	opacity: 1;
+	animation: pageswitchanimation 1s linear;
+	animation-iteration-count: infinite;
+	transition: all 0.4s ease;
+	z-index: 100;
+	position: fixed;
+	transform: translateY(-100%);
+}
+
+@keyframes pageswitchanimation {
+	0% {
+		transform: translateX(-150%) rotate(15deg) translateY(-50%);
+	}
+
+	50% {
+		transform: translateX(0%) rotate(15deg) translateY(-50%);
+	}
+
+	100% {
+		transform: translateX(150%) rotate(15deg) translateY(-50%);
+	}
+}
+
+@-webkit-keyframes pageswitchanimation {
+	0% {
+		transform: translateX(-150%) rotate(15deg) translateY(-50%);
+	}
+
+	50% {
+		transform: translateX(0%) rotate(15deg) translateY(-50%);
+	}
+
+	100% {
+		transform: translateX(150%) rotate(15deg) translateY(-50%);
+	}
+}
