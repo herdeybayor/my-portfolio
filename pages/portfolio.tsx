@@ -9,6 +9,7 @@ import { sanityClient, urlFor } from '../sanity'
 
 interface Project {
   _id: string
+  _createdAt: string
   title: string
   subtitle: string
   frameworks: string
@@ -89,12 +90,13 @@ export default portfolio
 export const getServerSideProps = async () => {
   const query = `*[_type=="project"]{
   _id,
+  _createdAt,
   title,
   subtitle,
   frameworks,
   url,
   image,
-}`
+} | order(_createdAt)`
 
   const projects = await sanityClient.fetch(query)
 
