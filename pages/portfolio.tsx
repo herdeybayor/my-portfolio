@@ -96,7 +96,7 @@ export const getServerSideProps = async () => {
   frameworks,
   url,
   image,
-} | order(_createdAt)`
+} | order(_createdAt desc)`
 
   const projects = await sanityClient.fetch(query)
 
