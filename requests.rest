@@ -1,0 +1,23 @@
+GET https://sherifdeenadebayo.com/api/hello
+
+###sendMessage
+POST http://localhost:3000/api/contact
+Content-Type: application/json
+
+{
+    "name": "test_user_01",
+    "email": "test_user@gmail.com",
+    "subject": "test_subject",
+    "message": "test_message"
+}
+
+###sendMessage
+POST https://sherifdeenadebayo.com/api/contact
+Content-Type: application/json
+
+{
+    "name": "test_user_01",
+    "email": "test_user@gmail.com",
+    "subject": "test_subject",
+    "message": "test_message"
+}
