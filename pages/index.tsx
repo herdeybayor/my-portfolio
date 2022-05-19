@@ -104,6 +104,7 @@ const Home: NextPage = () => {
             src="/assets/images/banner.png"
             layout="fill"
             objectFit="contain"
+            priority
           />
         </div>
       </div>
