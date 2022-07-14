@@ -31,7 +31,7 @@ const AboutMe = () => {
           </p>
           <button className="download__shadow group mx-auto flex items-center space-x-3 rounded-lg bg-creamy py-3 px-5 text-xl font-semibold text-purple-500">
             <a
-              href="https://drive.google.com/file/d/1iM9yx6GbHLejQcisZb1UxXjdeLnXQnqd/view?usp=sharing"
+              href="https://drive.google.com/file/d/1uHCA0137r_jIzzfiqearWtJjbORfd89V/view?usp=sharing"
               target="_blank"
             >
               Download CV
