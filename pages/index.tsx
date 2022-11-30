@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                     options={{
                       strings: [
                         ' A passionate FullStack Dev.',
-                        " I'm 17yrs Old.",
+//                         " I'm 17yrs Old.",
                         ' A professional UI/UX designer.',
                       ],
                       autoStart: true,
