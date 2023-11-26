@@ -35,7 +35,7 @@ export default {
             name: 'display',
             title: 'Display',
             type: 'boolean',
-            default: true,
+            initialValue: true,
         }
     ],
 }

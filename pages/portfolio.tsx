@@ -88,7 +88,7 @@ const portfolio = ({ siteViews, projects }: Props) => {
 export default portfolio
 
 export const getStaticProps = async () => {
-  const query = `*[_type=="project"]{
+  const query = `*[_type=="project" && display == true]{
   _id,
   _createdAt,
   title,
